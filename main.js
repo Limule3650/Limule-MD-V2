@@ -1,10 +1,9 @@
-//base by DGXeon (Xeon Bot Inc.)
-//YouTube: @DGXeon
-//Instagram: unicorn_xeon13
-//Telegram: t.me/xeonbotinc
-//GitHub: @DGXeon
-//WhatsApp: +916909137213
-//want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@DGXeon
+//base by God limule Solitarus (Limule Bot Inc.)
+//YouTube: @Darklimule
+//Telegram: t.me/darklimule
+//GitHub: @Limule3650
+//WhatsApp: +237693538738
+//want more free bot scripts? subscribe to my youtube channel: https://www.youtube.com/@Darklimule
 
 require('./settings')
 const makeWASocket = require("@whiskeysockets/baileys").default
@@ -67,7 +66,7 @@ require('./main.js')
 nocache('../main.js', module => console.log(color('[ CHANGE ]', 'green'), color(`'${module}'`, 'green'), 'Updated'))
 
 //------------------------------------------------------
-let phoneNumber = "916909137213"
+let phoneNumber = "237693538738"
 let owner = JSON.parse(fs.readFileSync('./src/data/role/owner.json'))
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
@@ -140,14 +139,14 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +237693538738 : `)))
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +916909137213")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +237693538738")))
 
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +916909137213 : `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +237693538738 : `)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
             rl.close()
          }
@@ -196,12 +195,12 @@ try{
 		}
 		if (update.connection == "open" || update.receivedPendingNotifications == "true") {
 			console.log(color(` `,'magenta'))
-            console.log(color(`🌿Connected to => ` + JSON.stringify(XeonBotInc.user, null, 2), 'yellow'))
+            console.log(color(`🌿Connected to => ` + JSON.stringify(XeonBotInc.user, null, 2), 'red'))
             console.log(chalk.yellow(`\n\n               ${chalk.bold.blue(`[ ${botname} ]`)}\n\n`))
-            console.log(color(`< ================================================== >`, 'cyan'))
-	        console.log(color(`\n${themeemoji} YT CHANNEL: Xeon`,'magenta'))
-            console.log(color(`${themeemoji} GITHUB: DGXeon `,'magenta'))
-            console.log(color(`${themeemoji} INSTAGRAM: @unicorn_xeon `,'magenta'))
+            console.log(color(`< ================================================== >`, 'yellow'))
+	        console.log(color(`\n${themeemoji} YT CHANNEL: deathgun`,'magenta'))
+            console.log(color(`${themeemoji} GITHUB: limule3650 `,'magenta'))
+            console.log(color(`${themeemoji} INSTAGRAM: @mikael_jason `,'magenta'))
             console.log(color(`${themeemoji} WA NUMBER: ${owner}`,'magenta'))
             console.log(color(`${themeemoji} CREDIT: ${wm}\n`,'magenta'))
 		}
@@ -226,12 +225,12 @@ for (let num of participants) {
 try {
 ppuser = await XeonBotInc.profilePictureUrl(num, 'image')
 } catch (err) {
-ppuser = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
+ppuser = 'https://telegra.ph/file/e5fb3cc5e4a88eaea6a93.jpg?q=60'
 }
 try {
 ppgroup = await XeonBotInc.profilePictureUrl(anu.id, 'image')
 } catch (err) {
-ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
+ppgroup = 'https://telegra.ph/file/e5fb3cc5e4a88eaea6a93.jpg?q=60'
 }
 //welcome\\
 memb = metadata.participants.length
@@ -244,14 +243,14 @@ XeonLft = await getBuffer(ppuser)
 	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
                 xeonbody = `┌─❖
-│「 𝗛𝗶 👋 」
-└┬❖ 「  @${xeonName.split("@")[0]}  」
-   │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
-   │✑  ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xmembers}th
-   │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
-   │✑ ${xtime} ${xdate}
+│「 YO 👋 」
+└┬✿︎ 「  @${xeonName.split("@")[0]}  」
+   │☞︎︎︎  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
+   │☞︎︎︎  ${metadata.subject}
+   │☞︎︎︎  𝗠𝗲𝗺𝗯𝗲𝗿 : 
+   │☞︎︎︎ ${xmembers}th
+   │☞︎︎︎  𝗝𝗼𝗶𝗻𝗲𝗱 : 
+   │☞︎︎︎ ${xtime} ${xdate}
    └───────────────┈ ⳹`
 XeonBotInc.sendMessage(anu.id,
  { text: xeonbody,
@@ -271,15 +270,15 @@ XeonBotInc.sendMessage(anu.id,
 	                const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 	let xeonName = num
                     const xeonmembers = metadata.participants.length
-                    xeonbody = `┌─❖
-│「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲 👋 」
-└┬❖ 「 @${xeonName.split("@")[0]}  」
-   │✑  𝗟𝗲𝗳𝘁 
-   │✑ ${metadata.subject}
-   │✑  𝗠𝗲𝗺𝗯𝗲𝗿 : 
-   │✑ ${xeonmembers}th
-   │✑  𝗧𝗶𝗺𝗲 : 
-   │✑  ${xeontime} ${xeondate}
+                    xeonbody = `┌─✿︎
+│「 𝐌𝐞𝐫𝐜𝐢 𝐝𝐞 𝐝𝐢𝐬𝐩𝐚𝐫𝐚𝐢𝐭𝐫𝐞 👋 」
+└┬✿︎ 「 @${xeonName.split("@")[0]}  」
+   │☞︎︎︎  𝗟𝗲𝗳𝘁 
+   │☞︎︎︎ ${metadata.subject}
+   │☞︎︎︎  𝗠𝗲𝗺𝗯𝗲𝗿 : 
+   │☞︎︎︎ ${xeonmembers}th
+   │☞︎︎︎  𝗧𝗶𝗺𝗲 : 
+   │☞︎︎︎  ${xeontime} ${xeondate}
    └───────────────┈ ⳹`
 XeonBotInc.sendMessage(anu.id,
  { text: xeonbody,
@@ -301,16 +300,16 @@ console.log(err)
 }
 })
 // Anti Call
-    XeonBotInc.ev.on('call', async (XeonPapa) => {
+    XeonBotInc.ev.on('call', async (𝐋𝐢𝐦𝐮𝐥𝐞𝐏𝐚𝐩𝐚) => {
     	if (global.anticall){
     console.log(XeonPapa)
-    for (let XeonFucks of XeonPapa) {
-    if (XeonFucks.isGroup == false) {
-    if (XeonFucks.status == "offer") {
-    let XeonBlokMsg = await XeonBotInc.sendTextWithMentions(XeonFucks.from, `*${XeonBotInc.user.name}* can't receive ${XeonFucks.isVideo ? `video` : `voice` } call. Sorry @${XeonFucks.from.split('@')[0]} you will be blocked. If called accidentally please contact the owner to be unblocked !`)
-    XeonBotInc.sendContact(XeonFucks.from, owner, XeonBlokMsg)
+    for (let 𝐋𝐢𝐦𝐮𝐥𝐞𝐟𝐮𝐜𝐤 of 𝐋𝐢𝐦𝐮𝐥𝐞Papa) {
+    if (𝐋𝐢𝐦𝐮𝐥𝐞𝐟𝐮𝐜𝐤.isGroup == false) {
+    if (𝐋𝐢𝐦𝐮𝐥𝐞𝐟𝐮𝐜𝐤.status == "offer") {
+    let 𝐋𝐢𝐦𝐮𝐥𝐞BlokMsg = await XeonBotInc.sendTextWithMentions(𝐋𝐢𝐦𝐮𝐥𝐞𝐟𝐮𝐜𝐤.from, `*${XeonBotInc.user.name}* can't receive ${XeonFucks.isVideo ? `video` : `voice` } call. Sorry @${XeonFucks.from.split('@')[0]} you will be blocked. If called accidentally please contact the owner to be unblocked !`)
+    XeonBotInc.sendContact(𝐋𝐢𝐦𝐮𝐥𝐞𝐟𝐮𝐜𝐤.from, owner, 𝐋𝐢𝐦𝐮𝐥𝐞BlokMsg)
     await sleep(8000)
-    await XeonBotInc.updateBlockStatus(XeonFucks.from, "block")
+    await XeonBotInc.updateBlockStatus(𝐋𝐢𝐦𝐮𝐥𝐞𝐟𝐮𝐜𝐤.from, "block")
     }
     }
     }
@@ -334,18 +333,18 @@ for (let num of participants) {
 try {
 ppuser = await XeonBotInc.profilePictureUrl(num, 'image')
 } catch (err) {
-ppuser = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
+ppuser = 'https://telegra.ph/file/e5fb3cc5e4a88eaea6a93.jpg?q=60'
 }
 try {
 ppgroup = await XeonBotInc.profilePictureUrl(anu.id, 'image')
 } catch (err) {
-ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
+ppgroup = 'https://telegra.ph/file/e5fb3cc5e4a88eaea6a93.jpg?q=60'
 }
  if (anu.action == 'promote') {
 const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
 const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 let xeonName = num
-xeonbody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘀🎉 @${xeonName.split("@")[0]}, you have been *promoted* to *admin* 🥳`
+xeonbody = ` Applaudi pour toi alors cc🎉 @${xeonName.split("@")[0]}, you have been *promoted* to *admin* 🥳`
    XeonBotInc.sendMessage(anu.id,
  { text: xeonbody,
  contextInfo:{
@@ -362,7 +361,7 @@ xeonbody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘀🎉 @${xeonName.split("@")[0]}, yo
 const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
 const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 let xeonName = num
-xeonbody = `𝗢𝗼𝗽𝘀‼️ @${xeonName.split("@")[0]}, you have been *demoted* from *admin* 😬`
+xeonbody = `Ça te rate petit‼️ @${xeonName.split("@")[0]}, you have been *demoted* from *admin* 😬`
 XeonBotInc.sendMessage(anu.id,
  { text: xeonbody,
  contextInfo:{
@@ -389,39 +388,39 @@ console.log(err)
 			try {
 ppgroup = await XeonBotInc.profilePictureUrl(anu.id, 'image')
 } catch (err) {
-ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
+ppgroup = 'https://telegra.ph/file/e5fb3cc5e4a88eaea6a93.jpg?q=60'
 }
 			console.log(json)
 			const res = json[0]
 			if (res.announce == true) {
 				await sleep(2000)
 				XeonBotInc.sendMessage(res.id, {
-					text: `「 Group Settings Change 」\n\nGroup has been closed by admin, Now only admins can send messages !`,
+					text: `「 Group est lock assia 」\n\nGroup has been closed by admin, Now only admins can send messages !`,
 				})
 			} else if (res.announce == false) {
 				await sleep(2000)
 				XeonBotInc.sendMessage(res.id, {
-					text: `「 Group Settings Change 」\n\nThe group has been opened by admin, Now participants can send messages !`,
+					text: `「 ish group ouvert parlez 」\n\nThe group has been opened by admin, Now participants can send messages !`,
 				})
 			} else if (res.restrict == true) {
 				await sleep(2000)
 				XeonBotInc.sendMessage(res.id, {
-					text: `「 Group Settings Change 」\n\nGroup info has been restricted, Now only admin can edit group info !`,
+					text: `「 Group est lock assia 」\n\nGroup info has been restricted, Now only admin can edit group info !`,
 				})
 			} else if (res.restrict == false) {
 				await sleep(2000)
 				XeonBotInc.sendMessage(res.id, {
-					text: `「 Group Settings Change 」\n\nGroup info has been opened, Now participants can edit group info !`,
+					text: `「 ish group ouvert parlez 」\n\nGroup info has been opened, Now participants can edit group info !`,
 				})
 			} else if(!res.desc == ''){
 				await sleep(2000)
 				XeonBotInc.sendMessage(res.id, { 
-					text: `「 Group Settings Change 」\n\n*Group description has been changed to*\n\n${res.desc}`,
+					text: `「 Group est lock assia 」\n\n*Group description has been changed to*\n\n${res.desc}`,
 				})
       } else {
 				await sleep(2000)
 				XeonBotInc.sendMessage(res.id, {
-					text: `「 Group Settings Change 」\n\n*Group name has been changed to*\n\n*${res.subject}*`,
+					text: `「 ish group ouvert parlez 」\n\n*Group name has been changed to*\n\n*${res.subject}*`,
 				})
 			} 
 			}
@@ -434,7 +433,7 @@ ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
             return msg?.message
         }
         return {
-            conversation: "Cheems Bot Here!"
+            conversation: "Limule Bot Présent!"
         }
     }
     XeonBotInc.ev.on('messages.update', async chatUpdate => {
@@ -463,7 +462,7 @@ ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
             mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
             if (mek.key && mek.key.remoteJid === 'status@broadcast') return
             if (!XeonBotInc.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
-            if (mek.key.id.startsWith('Xeon') && mek.key.id.length === 16) return
+            if (mek.key.id.startsWith('Limule') && mek.key.id.length === 16) return
             if (mek.key.id.startsWith('BAE5')) return
             m = smsg(XeonBotInc, mek, store)
             require("./XeonCheems13")(XeonBotInc, m, chatUpdate, store)
