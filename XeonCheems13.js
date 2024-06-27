@@ -1,10 +1,9 @@
-//base by DGXeon
+//base by God limule Solitarus 
 //re-upload? recode? copy code? give credit ya :)
-//YouTube: @DGXeon
-//Instagram: unicorn_xeon13
-//Telegram: t.me/xeonbotinc
-//GitHub: @DGXeon
-//WhatsApp: +916909137213
+//YouTube: @Darklimule
+//Telegram: t.me/darklimule
+//GitHub: @Limule3650
+//WhatsApp: +237693538738
 //want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@DGXeon
 require('./lib/listmenu')
 const {
