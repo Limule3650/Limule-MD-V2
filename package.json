@@ -1,7 +1,7 @@
 {
-    "name": "Cheems-Bot-MD",
-    "version": "13.0.0",
-    "description": "Whatsapp Bot By DGXeon",
+    "name": "LIMULE-MD-V2",
+    "version": "2.0.0",
+    "description": "Whatsapp Bot By God limule Solitarus",
     "main": "index.js",
     "type": "commonjs",
     "directories": {
@@ -12,7 +12,7 @@
     "scripts": {
         "start": "node index.js"
     },
-    "author": "DGXeon",
+    "author": "God limule Solitarus",
     "license": "MIT",
     "dependencies": {
         "@whiskeysockets/baileys": "^6.7.2",
